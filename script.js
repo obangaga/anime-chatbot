@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Muat model Live2D
     async function loadModel() {
         try {
-            model = await PIXI.live2d.Live2DModel.from('assets/model.moc3');
+            model = await PIXI.live2d.Live2DModel.from('assets/mymodel/model3.json');
+
             app.stage.addChild(model);
             
             // Atur skala dan posisi
